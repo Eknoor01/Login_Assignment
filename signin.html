@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(4, 4, 4), rgb(246, 246, 246));
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            align-items: center;
+        
+        }
+        .navbar ul{
+            display: flex;
+            gap :20px;
+            list-style-type: none;
+            color: #fff;
+            text-decoration: none;
+        }
+        h1 {
+            color: aliceblue;
+            margin: 0;
+        }
+        img {
+            width: 70px;
+            align-items: center;
+            justify-content: left;
+            border-radius: 50%;
+        }
+        #content {
+            max-width: 800px;
+            text-align: left;
+            border: 2px solid #333;
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #content h3 {
+            color: #cb2727;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        #content p, #content ul {
+            color: #555;
+            line-height: 1.6;
+        }
+        #content ul {
+            padding-left: 20px;
+        }
+        #content ul li {
+            margin-bottom: 10px;
+        }
+        #content a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        #content a:hover {
+            text-decoration: underline;
+        }
+        .background {
+            height: 400px;
+            position: relative;
+        }
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(https://pics.craiyon.com/2023-07-21/9c49f185fa084ae18b844ce0506745c4.webp);
+            background-size: cover;
+            background-position: center;
+            filter: blur(1px);
+            z-index: -1;
+        }
+        .Head_news {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        #news {
+            padding-top: 100px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 100px;
+            margin: 100px;
+            width: auto;
+            color: rgb(227, 228, 230);
+            z-index: 1;
+            position: relative;
+            border: solid;
+            border-style: ridge;
+            background-color: black;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.button:hover::after {
+  filter: blur(30px);
+}
+
+.button:hover::before {
+  transform: rotate(-180deg);
+}
+
+.button:active::before {
+  scale: 0.7;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div><img src="file.jpeg" alt=""></div>
+            <h1>NewsLetter</h1>
+            <ul>
+                <li>Home</li>
+                <li>Contact us</li>
+            </ul>
+            <div >
+                <button class="button" type="submit" href="news.html">Latest news
+                    
+                </button>
+            
+            </div>
+            <a href="news.html">Click here</a>
+        </nav>
+        <hr>    
+    </header>
+    <section>
+        <div class="background"></div>
+        <div class="Head_news">
+            <div id="news">
+                <h2>NEWS</h2>
+            </div>
+        </div>
+    </section>
+    <div>
+        <div id="content">
+            <h3>Latest News Headlines</h3>
+            <p>Stay updated with the latest news from around the world. Here are some of the top headlines for today:</p>
+            <ul>
+                <li><a href="https://www.bbc.com/news" target="_blank">BBC News</a> - Breaking news, analysis, and updates.</li>
+                <li><a href="https://www.cnn.com" target="_blank">CNN</a> - Latest news from the US and around the world.</li>
+                <li><a href="https://www.reuters.com" target="_blank">Reuters</a> - Business, financial, and world news.</li>
+                <li><a href="https://www.nytimes.com" target="_blank">The New York Times</a> - News, opinion, and multimedia.</li>
+            </ul>
+            <p>For more detailed news articles, visit <a href="https://news.google.com" target="_blank">Google News</a>.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 NewsLetter. All rights reserved. <a href="https://www.example.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
