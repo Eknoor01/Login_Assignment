@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        nav Button{
-            color: rgb(45, 163, 123);
-            border-color: aquamarine;
-            background-color: azure;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App with Navbar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <nav>
-        <Button class="SignIn" onclick="authentication()">Signin</Button>
-    </nav>
-</header>
 <body>
-    <h1>Hello guys</h1>
-    <p>plz try user name "ABC" and password "1234"</p
-    <script src="main.js"></script>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Notifications</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+
+  <div class="app-container">
+    <div id="app">
+      
+    </div>
+  </div>
+
+  <script src="script.js">
+
+  </script>
 </body>
 </html>
